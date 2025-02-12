@@ -1,0 +1,6 @@
+
+b 68 020112012212112221012122012
+
+2025-02-10 evolve using different criteria, look at robustness as a
+criteria as well as longevity; the actual objective function. I need a
+framework for looking at evolutionary timescale.
