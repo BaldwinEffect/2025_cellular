@@ -1,0 +1,26 @@
+
+in the paper - in this folder
+
+fig2 - fig2
+fig3 - fig5
+
+the fig3 in this paper was part of a parameter sweep, something that will be needed for a longer version of the paper.
+
+fig1 is similar to fig2, just for shorter runs, it turns out the
+cooperation method grows longer than expected.
+
+fig4 was just some messing around and can be ignored.
+
+graph.jl is for graphing the very long CAs
+fraction.jl works out how rare a fitness score is
+
+agentExamples.jls, which is on zenodo, is a collection of CAs, in the
+form of a dictionary form CA number to fitness, these are just CAs
+that happened to occur during various experiments, in the future I
+will do this again sampling from the CA number and with a long
+potential time alive horizon.
+
+longest.txt is a collection of some long CAs that were created by the
+various runs, it isn't any sort of sampling, I changed to potential
+time alive horizon a few times and, also, often when I had seen a long
+CA I adjusted the threshold for saving long CAs accordingly.
