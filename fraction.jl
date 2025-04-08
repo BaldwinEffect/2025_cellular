@@ -15,22 +15,22 @@ end
 
 # Example usage
 
-threshold = 251
-frac_p0_long = fraction_above(ca_dict, threshold)
+# threshold = 251
+# frac_p0_long = fraction_above(ca_dict, threshold)
 
 
-threshold = 134.1
-frac_p0 = fraction_above(ca_dict, threshold)
+# threshold = 134.1
+# frac_p0 = fraction_above(ca_dict, threshold)
 
-threshold = 95.9
-frac_p1 = fraction_above(ca_dict, threshold)
+# threshold = 95.9
+# frac_p1 = fraction_above(ca_dict, threshold)
 
-threshold = 64
-frac_bgd = fraction_above(ca_dict, threshold)
+# threshold = 64
+# frac_bgd = fraction_above(ca_dict, threshold)
 
-println(frac_bgd/frac_p0)
-println(frac_bgd/frac_p1)
-println(frac_bgd/frac_p0_long)
+# println(frac_bgd/frac_p0)
+# println(frac_bgd/frac_p1)
+# println(frac_bgd/frac_p0_long)
 
 
 println("medians")
@@ -49,5 +49,6 @@ println(frac_bgd/frac_p1)
 
 println(frac_p1/frac_p0)
 
+println(frac_bgd)
 
 

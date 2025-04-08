@@ -2,6 +2,7 @@ using CSV, DataFrames, Gadfly
 import Cairo, Fontconfig
 
 filename = "fig5_p1"
+#filename = "fig5_p0"
 
 using CSV, DataFrames, Gadfly, Random
 
@@ -35,12 +36,14 @@ df_zeros.scaled = df_zeros.zeros .* scale_factor
 # 4. Create the layered plot.
 p = plot(
     # Layer 1: Positive fitness scatter (blue points with jitter)
-    layer(df_positive, x=:jitter, y=:fitness, Geom.point,
-          Theme(default_color="blue", point_size=0.75mm,highlight_width=0.05mm,plot_padding=[0mm,0mm,0mm,0mm])),
+    df_positive, x=:jitter, y=:fitness, Geom.point,
+    Theme(default_color="blue", point_size=0.5mm,highlight_width=0.01mm,plot_padding=[3mm,1mm,5mm,1mm]),
+    #Theme(default_color="red", point_size=0.5mm,highlight_width=0.01mm,plot_padding=[1mm,1mm,5mm,1mm]),
     Guide.xlabel(""),
     Guide.ylabel(""),
 #    Scale.y_continuous(minvalue=-2),
-    Coord.Cartesian(xmin=0,xmax=5200,ymin=-2,ymax=60),
+    #    Coord.Cartesian(xmin=0,xmax=5200,ymin=-2,ymax=200),
+        Coord.Cartesian(xmin=0,xmax=5200,ymin=-2,ymax=60),
 )
 
 # 5. Annotate the plot to indicate the scaling factor for the zeros count.

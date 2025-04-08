@@ -112,6 +112,8 @@ function testAgent(agent::Agent,maxYears)
         push!(worlds,world)
         yearC+=1
     end
+
+    println(yearC-1)
     
     return worlds
     
@@ -145,10 +147,11 @@ agent=Agent(rule,3)
 
 worlds=alignWorlds(testAgent(agent,maxYears))
 
+#=
 for world in worlds
     printOut(world)
 end
-
+=#
 
 # Function to map a state (0, 1, or 2) to a color.
 state_to_color(s::Int) = s == 0 ? RGB(1,1,1) : s == 1 ? RGB(1,0,0) : s == 2 ? RGB(0,0,1) : error("Invalid state: $s")
